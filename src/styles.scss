@@ -1,1 +1,9 @@
-/* You can add global styles to this file, and also import other style files */
+@import './app/utilities/variables.scss';
+
+body{
+    font-family: "Helvetica", Sans-Serif;
+    background-color: $white;
+    color: $gray;
+    box-sizing: border-box;
+    height: 100dvh;
+}

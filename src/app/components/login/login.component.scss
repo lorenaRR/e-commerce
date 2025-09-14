@@ -1,0 +1,71 @@
+@import "../../utilities/variables.scss";
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100dvh;
+
+  & .form {
+    background-image: url("../../../assets/login.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    width: 740px;
+    height: 648px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    & #logo {
+      margin-bottom: 50px;
+    }
+
+    & .login {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 250px;
+      & input[type="text"],
+      [type="password"] {
+        height: 30px;
+        border-radius: 20px;
+        border: 1px solid $green;
+        width: 215px;
+        margin: 10px;
+        padding-left: 35px;
+        &.icon-user {
+          margin-right: 10px;
+          background: url("../../../assets/icons/user.png") no-repeat left;
+          color: $gray;
+          background-color: $white;
+          background-size: 10px;
+          background-position: 6% 50%;
+        }
+        &.icon-lock {
+          background: url("../../../assets/icons/lock.png") no-repeat left;
+          color: $gray;
+          background-color: $white;
+          background-size: 10px;
+          background-position: 6% 50%;
+        }
+      }
+
+      & button {
+        color: $white;
+        background-color: $green;
+        height: 32px;
+        border-radius: 20px;
+        border: 1px solid $green;
+        width: 100%;
+        margin: 10px;
+      }
+
+      button:active {
+        filter: brightness(50%);
+      }
+    }
+  }
+}
